@@ -10,6 +10,8 @@ typedef int32_t ZmodQ;
 //! HE parameters
 #define logN 11
 #define N 2048
+//! Parameters for FFT
+#define N2 1025
 
 #define logT 11
 #define T 2048 // plaintext space
@@ -47,9 +49,6 @@ typedef int32_t ZmodQ;
 
 //! polynomial in ZmodQ[x]/(x^n+1)
 typedef ZmodQ PolyModQ[N];
-
-//! Parameters for FFT
-#define N2 0x8001
 
 typedef fftw_complex Ring_FFT[N2];
 #endif
